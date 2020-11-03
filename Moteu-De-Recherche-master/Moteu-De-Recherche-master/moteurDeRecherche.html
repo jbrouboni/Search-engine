@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Moteur de recherche</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <img src='avatars.png'style='display: block;margin-left: auto;margin-right: auto;'>
+    <h2>Recherchez votre artiste grâce à notre super moteur.</h2>   
+
+    <form>
+     <div class="form-group">
+    <input  class="form-control"  placeholder="Tapez votre recherche" id="singers" onkeydown="researchSingerName(this.value);">
+  
+     </div>
+  <button type="submit" class="btn btn-primary" id="research">Recherchez</button>
+  </form>  
+
+  </div>
+
+  <div class="jumbotron">
+	<span id="multipleResult" ></span>
+    <h2>Résultat de la recherche</h2>     
+
+    <table class="table" id="tableResult">
+       <tbody>
+    
+       </tbody>
+    </table>
+	
+	
+	<table class="table" id="tableResult2">
+	     <thead>
+			<tr>
+			  <th scope="col">Nom album</th>
+			  <th scope="col">Date de sortie</th>
+			  <th scope="col">Label Discographique</th>
+			</tr>
+		  </thead>
+       <tbody>
+       </tbody>
+    </table>
+	
+	<table class="table" id="tableResult3">
+	     <thead>
+			<tr>
+			  <th scope="col">Nom chanson</th>
+			  <th scope="col">Album</th>
+			</tr>
+		  </thead>
+       <tbody>
+       </tbody>
+    </table>
+	
+	
+	<table class="table table-striped " id="tableResult4">
+		<thead>
+			<tr>
+			  <th scope="col">Vous cherchez peut être...</th>
+			</tr>
+		  </thead>
+       <tbody>
+    
+       </tbody>
+    </table>
+  </div>
+</div>
+
+	
+
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+
+
+</html>
